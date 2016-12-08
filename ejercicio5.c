@@ -18,8 +18,10 @@ int main(int argc,char **argv) {
 		y = 0;x = 0;
 		f_2 = 0;
 		while(f_2 < 3) {
-			c_2 = 0;
+			c_2 = 0;			
+			
 			while(c_2 < 3) {
+				
 				if(f_2 == f) {
 					break;
 				} else if(c_2 != c) {
@@ -28,13 +30,20 @@ int main(int argc,char **argv) {
 					if(y == 2) {y = 0;x++;}
 				}
 				c_2++;
+				
 			}
+			
+			
 			f_2++;
 		}
+
+		
+		
 		adjunta[f][c] = aux[0][0] * aux[0] [1] - aux[1][0] * aux[1][1];
 		printf("adjunta[%i][%i]\t: %i\n",f,c,adjunta[f][c]);
 		c++;
 		if(c == 3) {c = 0;f++;}
+
 		i++;
 	}
 	return 0;
