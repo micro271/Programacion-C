@@ -65,7 +65,7 @@ int main(int argc,char **argv) {
 			printf("Quimica (0-10): ");fflush(stdin);
 			scanf("%hi",alumno[i].quimica);
 			
-			alumno[i].promedio = (alumno[i].matematicas + alumno[i].ingles + alumno[i].fisica + alumno[i].historia + alumno[i].quimica)/5;
+			alumno[i].promedio = (alumno[i].matematicas + alumno[i].ingles + alumno[i].fisica + alumno[i].historia + alumno[i].quimica)/5.;
 			if(alumno[i].promedio < 8) {cont++;}
 		}
 	*/
