@@ -15,7 +15,7 @@ typedef struct ALUMNO {
 	short int fisica;
 	short int historia;
 	short int quimica;
-	short int promedio;
+	float promedio;
 }Alumno;
 int main(int argc,char **argv) {
 	int i,j,cont = 0;
@@ -38,7 +38,7 @@ int main(int argc,char **argv) {
 		alumno[i].fisica = 1 + rand() % ((10 + 1) - 1);
 		alumno[i].historia = 1 + rand() % ((10 + 1) - 1);
 		alumno[i].quimica = 1 + rand() % ((10 + 1) - 1);
-		alumno[i].promedio = (alumno[i].matematicas + alumno[i].ingles + alumno[i].fisica + alumno[i].historia + alumno[i].quimica)/5;
+		alumno[i].promedio = (alumno[i].matematicas + alumno[i].ingles + alumno[i].fisica + alumno[i].historia + alumno[i].quimica)/5.;
 		if(alumno[i].promedio < 8) {cont++;}
 	}
 	/*
@@ -77,7 +77,7 @@ int main(int argc,char **argv) {
 			printf("Ingres: %hi\n",alumno[i].ingles);
 			printf("Fisica: %hi\n",alumno[i].fisica);
 			printf("Historia: %hi\n",alumno[i].historia);
-			printf("Promedio: %hi\n\n",alumno[i].promedio);
+			printf("Promedio: %.2f\n\n",alumno[i].promedio);
 		}
 	}
 	return 0;
