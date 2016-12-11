@@ -4,8 +4,8 @@ char *ABinario(int x,unsigned short int BYTS);
 
 
 int main(int argc,char **argv) {
-	int aux = 256,nByts,i;
-	nByts = sizeof(aux);
+	int aux = 15,nByts,i;
+	nByts = 1;
 	char *bin = ABinario(aux,nByts);
 	for(i = 0; i < nByts*8; i++) {
 		if(i%8 == 0) {printf(" ");}
@@ -41,6 +41,6 @@ char *ABinario(int x,unsigned short int BYTS) {
 		bits[k] = tmp;
 		k++;
 	}
-	
+
 	return bits;
 }
