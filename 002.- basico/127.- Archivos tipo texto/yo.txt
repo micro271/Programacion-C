@@ -1,0 +1,3 @@
+Nombre: manuel, Apellido: zelaya, Edad: 21
+Nombre: maria, Apellido: zelaya, Edad: 30
+Nombre: maria, Apellido: zelaya, Edad: 43

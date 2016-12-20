@@ -1,0 +1,1 @@
+Nombre: manuel		Edad:21	Sexo: masculino
